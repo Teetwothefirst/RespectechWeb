@@ -25,3 +25,13 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
+/* .right-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */

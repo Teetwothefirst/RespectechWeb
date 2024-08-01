@@ -18,7 +18,7 @@
             </div>
             <div class="right">
                 <div class="right-child">
-                    <div>
+                    <div class="windmill">
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.125 0.521484L23.3422 5.478C25.2986 7.30409 26.342 9.78237 26.342 12.5215C26.342 15.1302 27.3855 17.6085 29.2115 19.4346L29.8636 20.0867L35.8634 0.651908" fill="#F14950"/>
                             <path d="M0.394531 17.869L7.56813 17.6081C10.1767 17.4777 12.7853 18.5212 14.6113 20.3473C16.4373 22.1734 18.9154 23.0864 21.524 23.0864H22.437L12.7853 5.2168" fill="#F14950"/>
@@ -31,7 +31,7 @@
                         </svg>                        
                     </div>
                     <h3>Welcome</h3>
-                    <small>Please Sign up to start your journey</small>
+                    <p class="action">Please Sign up to start your journey</p>
                     <form action="">
                         <label for="fullname">
                             <input type="text" name="fullname" id="fullname" placeholder="Full name" required>
@@ -46,11 +46,23 @@
                             <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required>
                         </label>
                         <label for="check">
-                            <input type="checkbox" name="check" id="check">
-                            By clicking here, you agree that you have read and accepted to our <a href="privacypolicy.html">Privacy Policy</a>
+                            <div class="d-flex">
+                                <input type="checkbox" name="check" id="check">
+                                <small class="action">By clicking here, you agree that you have read and accepted our <a href="privacypolicy.html">Privacy Policy</a></small>    
+                            </div>
+                           </label>
+                        <button type="submit" class="signup action">Sign up</button>
+                        <label for="signin" class="action">
+                            <small class="">Already have an account? <a href="index.html">Sign in</a></small>
                         </label>
-                        <button type="submit">Sign up</button>
-                        <a href="index.html">Link up</a>
+
+                        <p for="or" class="continue action">Or continue with</p>
+                        <div class="SSO"><!--SSO stands for Single Sign on and it's a Auth method for verify accounts 
+                            easily by using Google and the likes-->
+                            <a href="#"><img src="./assets/google.png" alt="Google SSO"></a>
+                            <a href="#"><img src="./assets/facebook (3).png" alt=""></a>
+                            <a href="#"><img src="./assets/linkedIn.png" alt=""></a>
+                        </div>
                     </form>
                 </div>
                 

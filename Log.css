@@ -1,10 +1,126 @@
+/* Font  Classes 
+<<<<<<<.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+>>>>>>>>>
+
+
+*/
+
+
+
 *{
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 main{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
 }
 .bg-pink{
     background-color: rgb(253, 232, 233,0.7);
@@ -30,8 +146,56 @@ label{
     display: block;
     margin-bottom: 1rem;
 }
-/* .right-child{
+label > input{
+    width: 90%;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+a{
+    color: #F14950;
+}
+.signup{
+    width: 95%;
+    margin-top: 2rem;
+    background-color: #F14950;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 8px 5px;
+}
+.right-child{
+    /* width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-} */
+    align-items: center; */
+}
+.right-child > p{
+    margin-bottom: 2rem;
+}
+.right-child > form{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.continue{
+    font-size: .75em;
+    margin-top: .5rem;
+    margin-bottom: .35rem;
+}
+.signin{
+    display: flex;
+    justify-content: center;
+}
+.windmill, h3, .action, .SSO{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    gap: 2.5px;
+}
+.d-flex > small{
+    font-size: x-small;
+}

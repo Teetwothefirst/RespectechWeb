@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="index.html">
+                <img loading="logo" src="images/Logo.svg" class="logo" alt="Company Logo" />
+            </a>
+        </div>
+        <nav>
+            <div class="welcome">
+                <h1>Welcome User</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="btn light">Post a Job
+                        <img src="images/plus.svg" alt="" class="plus">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="notification">
+                        <img src="images/notifications.svg" alt="notification" class="notify">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="notification">
+                        <img src="images/settings.svg" alt="settings" class="notify">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidenav">
+            <a href="#"><img src="images/grid_view.svg" alt=""><span class="sr-only" aria-hidden="true">Home</span></a>
+            <a href="#"><img src="images/box-plus.svg" alt=""></a>
+            <a href="#"><img src="images/bar_chart.svg" alt=""><span class="sr-only" aria-hidden="true">Home</span></a>
+            <a href="#"><img src="images/work.svg" alt="#"><span class="sr-only" aria-hidden="true">Home</span></a>
+            <a href="#">
+                <img src="images/user.svg" alt=""><span class="sr-only" aria-hidden="true">Home</span>
+            </a>
+            <a href="../index.html">
+                <img src="images/logout.svg" alt=""><span class="sr-only" aria-hidden="true">Home</span>
+            </a>
+        </div>
+        <!-- End of Nav -->
+
+        <main>
+            <div class="main-schedule">
+                <div class="schedule">
+                    <h4>
+                        Total views
+                    </h4>
+                    <p>12K
+                        <img src="images/visibility.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+                <div class="schedule">
+                    <h4>
+                        Job Posts
+                    </h4>
+                    <p>24
+                        <img src="images/work-color.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+                <div class="schedule">
+                    <h4>
+                        Total Applicant
+                    </h4>
+                    <p>1.2k
+                        <img src="images/summarize.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+            </div>
+            <div class="main-schedule">
+                <div class="schedule">
+                    <h4>
+                        Selected Applications
+                    </h4>
+                    <p>240
+                        <img src="images/person_check.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+                <div class="schedule">
+                    <h4>
+                        Rejected Applications
+                    </h4>
+                    <p>840
+                        <img src="images/person_cancel.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+                <div class="schedule">
+                    <h4>
+                        Pending
+                    </h4>
+                    <p>120
+                        <img src="images/error.svg" alt="">
+                    </p>
+                    <h4>From One Week Statistics</h4>
+                </div>
+            </div>
+
+            <div class="side_menu">
+                <div class="top-post">
+                    <h4>Recent post</h4>
+                    <h5 class="top-more">See More</h5>
+                </div>
+                <div class="post">
+                    <div class="text">
+                        <img class="img-dark" src="images/ui_ux.svg" alt="">
+                        <div class="dark-text">
+                            <p>UI/UX Designer</p>
+                            <a href="#" class="btn dark">Edit</a>
+                        </div>
+                        <div class="both-div">
+                            <div class="date-container">
+                                <p id="date-posted"> <span id="current-date"></span></p>
+                            </div>
+                            <div class="text-bottom">
+                                <p>Remote</p>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- <div style="display: flex; justify-content:space-between; padding: 15px;">
+                    <div><img class="img-dark" src="images/ui_ux.svg" alt=""></div>
+                    <div>
+                        <p>UI/UX Designer</p>
+                        <a href="#" class="">Edit</a>
+                        <div class="date-container">
+                            <p id="date-posted"> <span id="current-date"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Remote</p>
+                        <p>Full Time</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function updateDate() {
+                const dateElement = document.getElementById('current-date');
+                const currentDate = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = currentDate.toLocaleDateString(undefined, options);
+                dateElement.textContent = formattedDate;
+            }
+
+            updateDate();
+
+            setInterval(function () {
+                const currentTime = new Date();
+                if (currentTime.getHours() === 0 && currentTime.getMinutes() === 0) {
+                    updateDate();
+                }
+            }, 60 * 1000); // Check every minute
+        });
+
+    </script>
+
+</body>
+
+</html>

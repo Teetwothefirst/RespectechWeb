@@ -1,0 +1,11 @@
+{
+  "name": "respectechweb",
+  "version": "1.0.0",
+  "description": "A Learning hub for creatives and disruptors",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Respectechies",
+  "license": "ISC"
+}
